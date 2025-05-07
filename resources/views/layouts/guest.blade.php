@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        {{-- <title>{{ config('app.name', 'Laravel') }}</title> --}}
+        <link rel="icon" type="image/png" href="{{ asset('storage/Image/Logo Taxi Booking big.svg') }}">
+        <title>{{ config('app.name', 'Laravel') }} - @yield('title')</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -18,7 +20,7 @@
         <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
             <div>
                 <a href="/">
-                    <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+                    <img src="{{ asset('storage/Image/Logo Taxi Booking.svg') }}" alt="Logo" style="width: 160px; height: 80px;">
                 </a>
             </div>
 

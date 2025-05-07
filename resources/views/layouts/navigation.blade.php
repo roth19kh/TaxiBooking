@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
+                        <img src="{{ asset('storage/Image/Logo Taxi Booking.svg') }}" alt="My Logo" class="h-5 w-10">
                     </a>
                 </div>
 
